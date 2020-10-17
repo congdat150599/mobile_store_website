@@ -1,0 +1,20 @@
+:root{
+	--red-heavy:#C80909;
+	--red-light:#F30707;
+	--white:#ffffff;
+	--black-heavy:#212020;
+	--black-light:#808080;
+	--gray-light:#F3F2F2;
+	--gray-super_light:#BFBEBE;
+	--gray-heavy:#969696;
+	--blue-light:#067DD1;
+	--blue-heavy:#1B29E1;
+	--green-heavy:#0B9404;
+	--violet-light:#6F06C0;
+}
+
+a{
+	text-decoration: none;
+	color: var(--white);
+
+}

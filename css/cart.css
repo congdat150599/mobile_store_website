@@ -1,0 +1,83 @@
+body, html {
+  background-color: var(--gray-light);
+  overflow-x: hidden; }
+
+.cart_block {
+  width: 100%;
+  height: auto;
+  margin: 2rem 11.5rem; }
+  .cart_block .cart {
+    width: 75%;
+    height: auto;
+    background-color: var(--white); }
+    .cart_block .cart .table_cart {
+      width: 100%; }
+      .cart_block .cart .table_cart .table_title {
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        background-color: var(--gray-super_light); }
+        .cart_block .cart .table_cart .table_title th {
+          width: 12%;
+          padding-top: 1rem; }
+      .cart_block .cart .table_cart .table_content {
+        text-align: center;
+        height: 150px;
+        border-bottom: 0.1px solid var(--gray-light); }
+        .cart_block .cart .table_cart .table_content td {
+          width: 12%;
+          padding-top: 1rem; }
+          .cart_block .cart .table_cart .table_content td img {
+            width: 100px;
+            height: 100px; }
+          .cart_block .cart .table_cart .table_content td a {
+            text-decoration: none; }
+          .cart_block .cart .table_cart .table_content td i:hover {
+            cursor: pointer; }
+  .cart_block .pay_block {
+    width: 75%;
+    height: 150px; }
+    .cart_block .pay_block .pay_content {
+      width: 30%;
+      height: 100%;
+      float: right;
+      display: flex;
+      flex-direction: column; }
+      .cart_block .pay_block .pay_content .total_price {
+        display: flex;
+        margin: 1.5rem; }
+        .cart_block .pay_block .pay_content .total_price label {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-right: .5rem;
+          margin-left: 2.5rem; }
+        .cart_block .pay_block .pay_content .total_price span {
+          font-size: 1.3rem;
+          color: var(--red-light);
+          font-weight: bold;
+          margin-top: .2rem; }
+      .cart_block .pay_block .pay_content button {
+        padding: .7rem 1rem;
+        width: 40%;
+        margin-left: 11.5rem;
+        border: none;
+        outline: none;
+        background-color: var(--blue-light);
+        color: var(--white); }
+      .cart_block .pay_block .pay_content button:hover {
+        cursor: pointer; }
+  .cart_block .more_info_block {
+    width: 75%;
+    height: 150px; }
+    .cart_block .more_info_block .more_info_content {
+      width: 30%;
+      height: 100%;
+      float: left;
+      display: flex;
+      flex-direction: column; }
+      .cart_block .more_info_block .more_info_content p {
+        margin: .3rem; }
+        .cart_block .more_info_block .more_info_content p a {
+          text-decoration: none; }
+
+/*# sourceMappingURL=cart.css.map */

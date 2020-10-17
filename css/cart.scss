@@ -1,0 +1,103 @@
+body, html{
+	background-color: var(--gray-light);
+	overflow-x: hidden;
+}
+.cart_block{
+	width: 100%;
+	height: auto;
+	margin:2rem 11.5rem;
+	.cart{
+		width: 75%;
+		height: auto;
+		background-color: var(--white);
+		.table_cart{
+			width: 100%;
+			.table_title{
+				height: 50px;
+				width: 100%;
+				text-align: center;
+				background-color: var(--gray-super_light);
+				th{
+					width: 12%;
+					padding-top: 1rem;
+				}
+			}
+			.table_content{
+				text-align: center;
+				height: 150px;
+				border-bottom: .1px solid var(--gray-light);
+				td{
+					width: 12%;
+					padding-top: 1rem;
+					img{
+						width: 100px;
+						height: 100px;
+					}
+					a{
+						text-decoration: none;
+					}
+					i:hover{
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.pay_block{
+		width: 75%;
+		height: 150px;
+		.pay_content{
+			width: 30%;
+			height: 100%;
+			float: right;
+			display: flex;
+		    flex-direction: column;
+		    .total_price{
+		    	display: flex;
+		    	margin:1.5rem;
+		    	label{
+		    		font-size: 1.5rem;
+		    		font-weight: bold;
+		    		margin-right: .5rem;
+		    		margin-left: 2.5rem;
+		    	}
+		    	span{
+		    		font-size: 1.3rem;
+		    		color: var(--red-light);
+		    		font-weight: bold;
+		    		margin-top: .2rem;
+		    	}
+		    }
+		    button{
+		    	padding:.7rem 1rem;
+		    	width: 40%;
+		    	margin-left: 11.5rem;
+		    	border:none;
+		    	outline: none;
+		    	background-color: var(--blue-light);
+		    	color: var(--white);
+		    }
+		    button:hover{
+		    	cursor: pointer;
+		    }
+		}
+	}
+	.more_info_block{
+		width: 75%;
+		height: 150px;
+		.more_info_content{
+			width: 30%;
+			height: 100%;
+			float: left;
+			display: flex;
+		    flex-direction: column;
+		    p{
+		    	margin:.3rem;
+		    	a{
+		    		text-decoration: none;
+		    	}
+		    }
+		}
+	}
+
+}
