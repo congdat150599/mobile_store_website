@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/setting.css">
+	<link rel="stylesheet" href="css/cart.css">
+	<link rel="stylesheet" href="css/payment.css">
+
+	<!-- jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- flexslider -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css"/>
+
+	<!-- slick slider -->
+	<link rel="stylesheet" href="css/slick.css">
+
+	<!-- sweet alert -->
+	<link rel="stylesheet" href="dist/node_modules/sweetalert2/dist/sweetalert2.css">
+
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/6e4540c13e.js" crossorigin="anonymous"></script>
+
+	<title>Unimart Store</title>
+</head>
+<body>
+	<header class="navbar">
+		<div class="top_menu">
+			<div class="top_left"><i class="fas fa-link"></i>&nbsp; Hình thức thanh toán</div>
+			<div class="top_right">
+				<ul>
+					<li><a href="#">Trang chủ</a></li>
+					<li><a href="#">Thông tin hay</a></li>
+					<li><a href="#">Giới thiệu</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="logo">
+				<span><a href="#">iSmart</a></span>
+			</div>
+			<div class="search">
+				<input type="text" class="input_search" placeholder="Nhập từ khóa tìm kiếm tại đây!">
+				<button class="btn_search">Tìm kiếm</button>
+			</div>
+			<div class="hotline_cart">
+				<div class="hotline">
+					<div class="btn_phone">
+						<div class="border">
+							<i class="fas fa-phone-volume"></i>
+						</div>
+					</div>
+					<div class="info_hotline">
+						<h2>Tư vấn</h2>
+						<p>0327.151.365</p>
+					</div>
+				</div>
+				<div class="Shopping_cart">
+					<div class="border_cart">
+						<i class="fas fa-cart-plus"></i>
+					</div>
+					
+					<span>0</span>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<div class="payment_container">
+		<div class="payment_block_left">
+			<div class="payment_left_content">
+				<div class="info_title">
+					<h2>THÔNG TIN KHÁCH HÀNG</h2>
+				</div>
+				<!-- <div class="line"></div> -->
+				<div class="info_cus">
+					<!-- <div class="info_block"> -->
+					<form action="#" method="#" class="info_block">
+						<div class="grid-item name">
+							<label>Họ tên</label>
+							<input type="text" class="name" placeholder="Họ tên">
+						</div>
+						<div class="grid-item gender">
+							<label>Danh xưng</label>
+							<div class="check_box">
+								<label class="container">Anh 
+	                                <input type="radio" checked="checked" name="radio">
+	                                <span class="checkmark"></span>
+	                            </label>
+	                            <label class="container">Chị
+	                                <input type="radio" name="radio">
+	                                <span class="checkmark"></span>
+	                            </label>
+							</div>
+						</div>
+						<div class="grid-item phone">
+							<label>Số điện thoại</label>
+							<input type="text" class="phone" placeholder="Điện thoại">
+						</div>
+						<div class="grid-item email">
+							<label>Email</label>
+							<input type="text" class="email" placeholder="Email">
+						</div>
+						<div class="address">
+							<label>Địa chỉ</label>
+							<div class="address_content">
+								<div class="item city">
+									<select name="city" id="city">
+										<option value="Choose city">Choose city</option>
+										<option value="hcm">TP HCM</option>
+									    <option value="hanoi">Hà Nội</option>
+									    <option value="danang">Đà Nẵng</option>
+									    <option value="gialai">Gia Lai</option>
+									</select>
+								</div>
+								<div class="item district">
+									<select name="district" id="district">
+										<option value="Choose district">Choose district</option>
+										<option value="6">khu pho 6</option>
+									    <option value="7">khu pho 7</option>
+									    <option value="8">khu pho 8</option>
+									    <option value="9">khu pho 9</option>
+									</select>
+								</div>
+								<div class="item village">
+									<select name="village" id="village">
+										<option value="Choose village">Choose village</option>
+										<option value="1">Số 1</option>
+									    <option value="2">Số 2</option>
+									    <option value="3">Số 3</option>
+									    <option value="4">Số 4</option>
+									</select>
+								</div>
+								<div class="item street">
+									<input type="text" class="street" placeholder="Số nhà, tên đường">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+		<div class="order_block_right">
+			<div class="order_right_content">
+				<div class="info_title">
+					<h2>THÔNG TIN ĐƠN HÀNG</h2>
+				</div>
+				<div class="info_order">
+					<table>
+						<tr>
+							<th class="left">SẢN PHẨM</th>
+							<th class="right">TỔNG</th>
+						</tr>
+						<tr>
+							<td class="left">
+								<div class="name">
+									<p>IPhone 11 64G</p><span>x4</span>
+								</div>
+								<div class="color">
+									<label>Màu:</label><span>Vàng</span>
+								</div>
+							</td>
+							<td class="right">179.000.000đ</td>
+						</tr>
+						<tr>
+							<td class="left">
+								<div class="name">
+									<p>IPhone 11 64G</p><span>x4</span>
+								</div>
+								<div class="color">
+									<label>Màu:</label><span>Vàng</span>
+								</div>
+							</td>
+							<td class="right">179.000.000đ</td>
+						</tr>
+						<tr>
+							<td class="left">
+								<div class="name">
+									<p>IPhone 11 64G</p><span>x4</span>
+								</div>
+								<div class="color">
+									<label>Màu:</label><span>Vàng</span>
+								</div>
+							</td>
+							<td class="right">179.000.000đ</td>
+						</tr>
+						<tr>
+							<td class="left">
+								<div class="name">
+									<p>IPhone 11 64G</p><span>x4</span>
+								</div>
+								<div class="color">
+									<label>Màu:</label><span>Vàng</span>
+								</div>
+							</td>
+							<td class="right">179.000.000đ</td>
+						</tr>
+						<tr>
+							<td class="left">
+								<div class="name">
+									<p>IPhone 11 64G</p><span>x4</span>
+								</div>
+								<div class="color">
+									<label>Màu:</label><span>Vàng</span>
+								</div>
+							</td>
+							<td class="right">179.000.000đ</td>
+						</tr>
+						<tr>
+							<td class="left total_order">TỔNG ĐƠN HÀNG</td>
+							<td class="right total_price">137.000.000đ</td>
+						</tr>
+					</table>
+					<div class="format_payment">
+						<div class="check_box">
+							<label class="container">
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                                Thanh toán tại cửa hàng 
+                            </label>
+                            <label class="container">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                Thanh toán tại nhà
+                            </label>
+						</div>
+					</div>
+					<div class="btn_pay">
+						<button class="submit">ĐẶT HÀNG</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+    <div id="fb-root"></div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/cart.js"></script>
+	<!-- slick slider js -->
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<!-- sweet alert -->
+	<script src="dist/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+	<!-- fanpage -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0" nonce="MVvmy9cV"></script>
+</body>
+</html>
